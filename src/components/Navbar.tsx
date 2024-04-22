@@ -6,7 +6,7 @@ import { ArrowDown } from "lucide-react"
 
 export default function Navbar() {
     return(
-        <div className="sticky inset-x-0 top-0 z-30 bg-background transition-all bg-red-600">
+        <div className="sticky inset-x-0 top-0 z-30 bg-background transition-all bg-gradient-to-r from-red-600 to-red-500">
             <MaxWidthWrapper>
                 <nav className="w-full relative flex items-center justify-between mx-auto px-12 py-5">
            
@@ -27,7 +27,7 @@ export default function Navbar() {
                         </li>
                     </ul>
 
-                    <Link href="/" className="border-2 p-1 font-normal px-4 rounded-full text-white ">
+                    <Link href="/" className="border-2 p-1 font-normal px-4 rounded-full text-white">
                         Download 
                     </Link>
 
