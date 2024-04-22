@@ -5,6 +5,7 @@ import { ArrowRight, Check, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Icons } from "../components/icons";
+import Demo from "@/components/Demo";
 
 export default function Home() {
   return (
@@ -68,9 +69,6 @@ export default function Home() {
                 </div>
               </ul>
 
-              <div className='mt-12 flex flex-col sm:flex-row items-center sm:items-start gap-5'>
-
-              </div>
             </div>
           </div>
 
@@ -80,7 +78,7 @@ export default function Home() {
               src='/try-it.png'
               className='absolute w-40 left-2/3 -top-2 select-none hidden sm:block'
             />
-            {/*<Demo />*/}
+            <Demo />
           </div>
         </div>
         <div className='absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32' />
@@ -99,7 +97,7 @@ export default function Home() {
               </h2>
             </div>
             <p className='mx-auto mt-8 text-center text-sm max-w-xl'>
-              - guy from my discord (i forgot who 💀)
+              - Happy Customer (totally not gaymærn💀)
             </p>
 
             {/* <Icons.arrow className='h-60 -mt-4 text-zinc-400 fill-zinc-400 pointer-events-none select-none' /> */}
@@ -179,14 +177,6 @@ export default function Home() {
             Let ProfanityAPI do the dirty work of keeping your user input clean.
           </p>
 
-          <div
-            id='api'
-            className='w-full flex flex-col items-center mt-12 px-4'>
-            <p className='font-bold text-xl my-4'>Make an API request</p>
-            <div className='relative max-w-2xl w-full text-left p-5 bg-[#1e1e1e] rounded-xl shadow'>
-              {/*<CodeSection />*/}
-            </div>
-          </div>
         </div>
       </section>
     </div>
