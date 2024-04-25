@@ -1,8 +1,5 @@
 'use client'
 
-{/*import { checkProfanity } from '@/actions'
-import { useMutation } from '@tanstack/react-query' */}
-
 import { useState } from 'react'
 import { Button } from './ui/button'
 import { Input } from './ui/input'
@@ -59,7 +56,7 @@ const Demo = () => {
               POST
             </span>
             <div className='h-[20px] w-px bg-zinc-300' />
-            <p className='break-all'>https://stopbanning.no</p>
+            <p className='break-all'>profanity-api-demo.nikolaserkjempekull.workers.dev/</p>
           </div>
         </div>
         <div className='relative flex flex-col sm:flex-row items-center gap-2 mt-6 h-full sm:h-9'>

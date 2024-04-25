@@ -56,6 +56,7 @@ import React from "react"
 export default function Navbar() {
     return(
       <div className="sticky inset-x-0 top-0 z-30 bg-background transition-all border-b">
+        <MaxWidthWrapper>
         <nav className="w-full relative flex items-center justify-between mx-auto px-12 py-5">
            
             <Link href="/">
@@ -77,7 +78,7 @@ export default function Navbar() {
                             >
                               <AvatarIcon className="h-6 w-6" />
                               <div className="mb-2 mt-4 text-lg font-medium">
-                                  Stop banning!                            
+                                  Ringsaker                            
                               </div>
                             </a>
                           </NavigationMenuLink>
@@ -157,6 +158,7 @@ export default function Navbar() {
               </Link>
  
         </nav>
+        </MaxWidthWrapper>
         </div>
     )
 }

@@ -177,6 +177,8 @@ export default function Home() {
             Let ProfanityAPI do the dirty work of keeping your user input clean.
           </p>
 
+          
+
         </div>
       </section>
     </div>
