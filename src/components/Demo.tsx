@@ -17,7 +17,7 @@ const Demo = () => {
        setError(null); // Reset error state
    
        try {
-         const res = await fetch('https://vector.profanity.dev', {
+         const res = await fetch('https://profanity-api-demo.nikolaserkjempekull.workers.dev/', {
            method: 'POST',
            headers: { 'Content-Type': 'application/json' },
            body: JSON.stringify({ message: inputValue }),
@@ -59,7 +59,7 @@ const Demo = () => {
               POST
             </span>
             <div className='h-[20px] w-px bg-zinc-300' />
-            <p className='break-all'>https://vector.profanity.dev</p>
+            <p className='break-all'>https://stopbanning.no</p>
           </div>
         </div>
         <div className='relative flex flex-col sm:flex-row items-center gap-2 mt-6 h-full sm:h-9'>
