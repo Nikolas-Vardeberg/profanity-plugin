@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -24,10 +25,7 @@ export default function Home() {
                   <span className='relative'>
                     i
                     <span className='absolute -left-4 -right-4 translate-x-[15px] md:translate-x-[3px] md:-top-1.5'>
-                      <img
-                        src='/swear-emoji.png'
-                        className='h-5 w-5 object-contain md:h-8 md:w-12'
-                      />
+                      <Image src='/swear-emoji.png' alt="Swear Emoji" width={20} height={20} className='object-contain md:h-8 md:w-12' />
                     </span>
                   </span>
                   ty
@@ -73,10 +71,13 @@ export default function Home() {
           </div>
 
           <div className='relative px-8 sm:px-16 md:px-0 mt-28 md:mx-auto md:max-w-xl w-full lg:mx-0 lg:mt-20'>
-            <img
+            <Image
+              width={160}
+              height={160}
+              alt="try-it"
               aria-hidden='true'
               src='/try-it.png'
-              className='absolute w-40 left-2/3 -top-2 select-none hidden sm:block'
+              className='absolute left-2/3 -top-2 select-none hidden sm:block'
             />
             <Demo />
           </div>
@@ -124,9 +125,12 @@ export default function Home() {
               <div className='relative z-10'>
                 <div className='absolute -z-10 left-1/2 -translate-x-1/2 -top-[90px]'>
                   <div className='absolute inset-x-0 -bottom-0 h-16 bg-gradient-to-t 0 from-blue-100 pointer-events-none'></div>
-                  <img
+                  <Image
+                    alt="shocked-emoji"
+                    height={96}
+                    width={96}
                     src='/shocked-emoji.png'
-                    className='h-24 relative -z-10 select-none'
+                    className='relative -z-10 select-none'
                   />
                 </div>
                 <p className='font-semibold text-lg'>
@@ -142,9 +146,12 @@ export default function Home() {
               <div className='relative z-10'>
                 <div className='absolute -z-10 left-1/2 -translate-x-1/2 -top-[90px]'>
                   <div className='absolute inset-x-0 -bottom-0 h-16 bg-gradient-to-t from-blue-100 pointer-events-none'></div>
-                  <img
+                  <Image
+                    alt="swear-emoji"
+                    height={96}
+                    width={96}
                     src='/swear-emoji.png'
-                    className='relative -z-10 h-24 select-none'
+                    className='relative -z-10 select-none'
                   />
                 </div>
                 <p className='font-semibold text-lg'>...makes you look bad</p>
