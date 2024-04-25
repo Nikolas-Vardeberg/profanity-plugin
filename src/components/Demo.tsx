@@ -4,9 +4,13 @@ import { useState } from 'react'
 import { Button } from './ui/button'
 import { Input } from './ui/input'
 
+type ResponseType = {
+  score: number;
+ };
+
 const Demo = () => {
     const [inputValue, setInputValue] = useState('');
-    const [response, setResponse] = useState(null);
+    const [response, setResponse] = useState<ResponseType | null>(null);
     const [error, setError] = useState(null);
    
     const handleSubmit = async (event: any) => {
@@ -31,7 +35,7 @@ const Demo = () => {
        }
     };
    
-    const renderProfanityMessage = (score) => {
+    const renderProfanityMessage = (score: number) => {
        if (score > 0.95) {
          return <span>OH GOD, VERY BIG PROFANITY DETECTED!!</span>;
        } else if (score > 0.9) {
