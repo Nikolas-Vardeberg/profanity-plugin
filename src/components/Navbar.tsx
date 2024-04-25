@@ -35,10 +35,10 @@ import React from "react"
         "Utforsk vår virksomhet og oppdag hva vi har å tilby.",
     },
     {
-      title: "Book time",
-      href: "/booking",
+      title: "Organisasjon",
+      href: "https://www.ringsaker.kommune.no/organisasjon.382268.no.html",
       description:
-      "Book en time for å få mer informasjon om våre skreddersydde flyttetjenester, og for å diskutere dine spesifikke behov og krav."
+      "Les mer om vår organisasjon og hva vi har å tilby.",
     },
     {
       title: "Ta Kontakt",
@@ -47,9 +47,9 @@ import React from "react"
       "Ta kontakt med oss for eventuelle spørsmål eller for å diskutere et potensielt samarbeid."
     },
     {
-      title: "Prisliste",
-      href: "/prisliste",
-      description: "Prislister & servicer vår virksomhet har å tilby",
+      title: "Tjenester",
+      href: "https://www.ringsaker.kommune.no/tjenester.465157.no.html",
+      description: "Sjekk ut våre tjenester og se hva vi har å tilby.",
     },
   ]
  
@@ -152,9 +152,9 @@ export default function Navbar() {
  
            
             <Link className={buttonVariants({  size: "default", className: "max-md:hidden bg-red-500" })}
-                href="/dashboard" target="_blank"
+                href="https://www.ringsaker.kommune.no/min-side.482842.no.html" target="_blank"
               >
-                Ta kontakt <ArrowRight className="ml-2 h-5 w-5" />
+                Min Side <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
  
         </nav>

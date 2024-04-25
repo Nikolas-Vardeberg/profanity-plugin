@@ -21,48 +21,34 @@ export default function Home() {
                   'relative tracking-tight sm:text-left mt-10 font-bold !leading-[4rem] text-gray-900 text-5xl md:text-7xl'
                 )}>
                 <span className='whitespace-nowrap'>
-                  Profan
+                  Stopp Mobb
                   <span className='relative'>
                     i
                     <span className='absolute -left-4 -right-4 translate-x-[15px] md:translate-x-[3px] md:-top-1.5'>
-                      <Image src='/swear-emoji.png' alt="Swear Emoji" width={20} height={20} className='object-contain md:h-8 md:w-12' />
+                      <img
+                        src='/swear-emoji.png'
+                        className='h-5 w-5 object-contain md:h-8 md:w-12'
+                      />
                     </span>
                   </span>
-                  ty
+                  ng
                 </span>
-                API
+                !
               </h1>
               <p className='mt-8 text-lg lg:pr-10 text-center lg:text-left text-balance md:text-wrap'>
-                Detecting toxic content has always been{' '}
-                <span
-                  className={cn(
-                    'font-scary font-bold text-red-500',
-                  )}>
-                  slow
-                </span>{' '}
-                and{' '}
-                <span
-                  className={cn(
-                    'font-scary font-bold text-red-500',
-                  )}>
-                  expensive
-                </span>
-                . Not anymore. Introducing a fast, free and open-source
-                profanity filter for your web apps.
+                Velkommen til Ringsaker kommunes nettressurs om stopp mobbing! Vi støtter foreldre med å bekjempe mobbing med vårt spesiallagde API. Sammen tar vi stand mot mobbing.
               </p>
 
               <ul className='mt-8 space-y-2 font-medium flex flex-col items-center sm:items-start'>
                 <div className='space-y-2'>
                   <li className='flex gap-1.5 items-center text-left'>
-                    <Check className='h-5 w-5 shrink-0 text-red-500' /> Much
-                    faster and cheaper to run than AI
+                    <Check className='h-5 w-5 shrink-0 text-red-500' /> Evaluering av språk
                   </li>
                   <li className='flex gap-1.5 items-center'>
-                    <Check className='h-5 w-5 shrink-0 text-red-500' /> Pretty accurate
+                    <Check className='h-5 w-5 shrink-0 text-red-500' /> Trygge miljøer
                   </li>
                   <li className='flex gap-1.5 items-center'>
-                    <Check className='h-5 w-5 shrink-0 text-red-500' /> 100%
-                    free & open-source
+                    <Check className='h-5 w-5 shrink-0 text-red-500' /> Sammen mot mobbing
                   </li>
                 </div>
               </ul>
@@ -74,9 +60,9 @@ export default function Home() {
             <Image
               width={160}
               height={160}
-              alt="try-it"
+              alt="prøv-det"
               aria-hidden='true'
-              src='/try-it.png'
+              src='/prøv-det.png'
               className='absolute left-2/3 -top-2 select-none hidden sm:block'
             />
             <Demo />
