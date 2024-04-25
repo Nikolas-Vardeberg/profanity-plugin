@@ -9,7 +9,7 @@ const Demo = () => {
     const [response, setResponse] = useState(null);
     const [error, setError] = useState(null);
    
-    const handleSubmit = async (event) => {
+    const handleSubmit = async (event: any) => {
        event.preventDefault();
        setError(null); // Reset error state
    
@@ -34,15 +34,15 @@ const Demo = () => {
    
     const renderProfanityMessage = (score) => {
        if (score > 0.95) {
-         return <span>🚨🚨😱😱 OH GOD, VERY BIG PROFANITY DETECTED!! 🚨🚨😱😱 </span>;
+         return <span>OH GOD, VERY BIG PROFANITY DETECTED!!</span>;
        } else if (score > 0.9) {
-         return <span>🚨😱 BIG PROFANITY DETECTED!! 🚨😱 </span>;
+         return <span>BIG PROFANITY DETECTED!!</span>;
        } else if (score > 0.88) {
-         return <span>🚨 PROFANITY DETECTED!! 🚨 </span>;
+         return <span>PROFANITY DETECTED!!</span>;
        } else if (score >= 0.85) {
-         return <span>😱 PRETTY SURE THIS IS A PROFANITY 😱</span>;
+         return <span>PRETTY SURE THIS IS A PROFANITY</span>;
        } else if (score < 0.85) {
-         return <span>Crispy clean input, no profanities :)) 👍👍</span>;
+         return <span>Crispy clean input, no profanities</span>;
        }
        return null;
     };
