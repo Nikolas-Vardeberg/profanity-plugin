@@ -20,8 +20,13 @@ const Header = async () => {
           {
             session.user ? (
               <div className="flex items-center gap-4">
-                <Link href="/admin/dashboard">
-                  <Button variant="outline">Log Out</Button></Link>
+                <form action={async () => {
+                    "use server"
+                    await logout();
+                    redirect("/admin/signin")
+                }}>
+                  <Button variant="outline" type="submit">Log Out</Button>
+                </form>
               </div>
 
             ) : (

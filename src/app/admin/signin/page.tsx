@@ -19,7 +19,7 @@ export default async function Home() {
 
 
   return (
-    <MaxWidthWrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
+    <MaxWidthWrapper className="h-screen w-screen flex flex-col items-center justify-center text-center align-middle">
         <Card className="w-[400px]">
             <CardHeader>
                 <div className="w-full flex flex-col gap-y-4 items-center justify-center">
