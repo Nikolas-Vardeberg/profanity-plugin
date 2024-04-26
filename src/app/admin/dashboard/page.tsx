@@ -1,8 +1,9 @@
+import Header from "@/components/Header";
 import { getSession } from "@/lib/lib"
 import { redirect } from "next/navigation";
 
 
-export default async function page() {
+const page = async() => {
     let session = await getSession();
 
     if(!session) {
@@ -11,10 +12,8 @@ export default async function page() {
 
     return(
         <>
-        <header>
-            admin header
-        </header>
-        <section>
+        <Header />
+         <section>
             <div>
                 <pre>{JSON.stringify(session, null, 2)}</pre>
             </div>
@@ -22,3 +21,5 @@ export default async function page() {
         </>
     )
 }
+
+export default page
