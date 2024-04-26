@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Icons } from "../components/icons";
 import Demo from "@/components/Demo";
+import CodeSection from "@/components/CodeSection";
 
 export default function Home() {
   return (
@@ -170,6 +171,14 @@ export default function Home() {
             Let ProfanityAPI do the dirty work of keeping your user input clean.
           </p>
 
+          <div
+            id='api'
+            className='w-full flex flex-col items-center mt-12 px-4'>
+            <p className='font-bold text-xl my-4'>Make an API request</p>
+            <div className='relative max-w-2xl w-full text-left p-5 bg-[#1e1e1e] rounded-xl shadow'>
+              <CodeSection />
+            </div>
+          </div>
           
 
         </div>
