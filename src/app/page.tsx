@@ -21,7 +21,7 @@ export default function Home() {
                   'relative tracking-tight sm:text-left mt-10 font-bold !leading-[4rem] text-gray-900 text-5xl md:text-7xl'
                 )}>
                 <span className='whitespace-nowrap'>
-                  Stopp Mobb
+                  Stopp Bann
                   <span className='relative'>
                     i
                     <span className='absolute -left-4 -right-4 translate-x-[15px] md:translate-x-[3px] md:-top-1.5'>
