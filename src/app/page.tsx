@@ -5,7 +5,6 @@ import { cn } from "@/lib/utils";
 import { ArrowRight, Check, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Icons } from "../components/icons";
 import Demo from "@/components/Demo";
 import CodeSection from "@/components/CodeSection";
 import Navbar from "@/components/Navbar";
