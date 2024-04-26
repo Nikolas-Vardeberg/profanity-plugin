@@ -10,10 +10,15 @@ export default async function page() {
     }
 
     return(
+        <>
+        <header>
+            admin header
+        </header>
         <section>
             <div>
                 <pre>{JSON.stringify(session, null, 2)}</pre>
             </div>
         </section>
+        </>
     )
 }
