@@ -56,7 +56,6 @@ import React from "react"
 export default function Navbar() {
     return(
       <div className="sticky inset-x-0 top-0 z-30 bg-background transition-all border-b">
-        <MaxWidthWrapper>
         <nav className="w-full relative flex items-center justify-between mx-auto px-12 py-5">
            
             <Link href="/">
@@ -151,14 +150,13 @@ export default function Navbar() {
             </div>
  
            
-            <Link className={buttonVariants({  size: "default", className: "max-md:hidden bg-red-500" })}
-                href="https://www.ringsaker.kommune.no/min-side.482842.no.html" target="_blank"
+            <Link className={buttonVariants({  size: "default", className: "max-md:hidden bg-red-500 hover:bg-red-700" })}
+                href="/admin/dashboard"
               >
                 Min Side <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
  
         </nav>
-        </MaxWidthWrapper>
         </div>
     )
 }

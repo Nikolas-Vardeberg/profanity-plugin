@@ -36,7 +36,7 @@ export default function Home() {
                 !
               </h1>
               <p className='mt-8 text-lg lg:pr-10 text-center lg:text-left text-balance md:text-wrap'>
-                Velkommen til Ringsaker kommunes nettressurs om stopp mobbing! Vi støtter foreldre med å bekjempe mobbing med vårt spesiallagde API. Sammen tar vi stand mot mobbing.
+                Velkommen til <span className="text-red-500">Ringsaker kommunes</span> nettressurs om <span className="text-red-500">stopp banning!</span> Vi støtter foreldre med å bekjempe banning med vårt spesiallagde <span className="text-red-500">API</span>. Sammen tar vi stand mot <span className="text-red-500">banning.</span>
               </p>
 
               <ul className='mt-8 space-y-2 font-medium flex flex-col items-center sm:items-start'>
@@ -48,7 +48,7 @@ export default function Home() {
                     <Check className='h-5 w-5 shrink-0 text-red-500' /> Trygge miljøer
                   </li>
                   <li className='flex gap-1.5 items-center'>
-                    <Check className='h-5 w-5 shrink-0 text-red-500' /> Sammen mot mobbing
+                    <Check className='h-5 w-5 shrink-0 text-red-500' /> Sammen mot <span className="text-red-500">banning</span>
                   </li>
                 </div>
               </ul>
