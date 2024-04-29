@@ -26,7 +26,7 @@ const Header = async () => {
                                 await logout();
                                 redirect("/admin/signin")
                             }}>
-                            <Button variant="outline" type="submit">Log Out</Button>
+                            <Button variant="adminOutline" type="submit">Log Out</Button>
                             </form>
                         </div>
 
