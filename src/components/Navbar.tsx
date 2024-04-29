@@ -29,25 +29,35 @@ import React from "react"
  
   const components: { title: string; href: string; description: string }[] = [
     {
-      title: "Om Oss",
+      title: "Brann og beredskap",
       href: "https://www.ringsaker.kommune.no",
       description:
         "Utforsk vår virksomhet og oppdag hva vi har å tilby.",
     },
     {
-      title: "Organisasjon",
+      title: "Kultur, natur og fritid",
       href: "https://www.ringsaker.kommune.no/organisasjon.382268.no.html",
       description:
       "Les mer om vår organisasjon og hva vi har å tilby.",
     },
     {
-      title: "Ta Kontakt",
+      title: "Oppvekst og læring",
       href: "https://www.ringsaker.kommune.no/kontakt-oss.465156.no.html",
       description:
       "Ta kontakt med oss for eventuelle spørsmål eller for å diskutere et potensielt samarbeid."
     },
     {
-      title: "Tjenester",
+      title: "Helse og omsorg",
+      href: "https://www.ringsaker.kommune.no/tjenester.465157.no.html",
+      description: "Sjekk ut våre tjenester og se hva vi har å tilby.",
+    },
+    {
+      title: "Individ og samfunn",
+      href: "https://www.ringsaker.kommune.no/tjenester.465157.no.html",
+      description: "Sjekk ut våre tjenester og se hva vi har å tilby.",
+    },
+    {
+      title: "Plan, bygg og eiendom",
       href: "https://www.ringsaker.kommune.no/tjenester.465157.no.html",
       description: "Sjekk ut våre tjenester og se hva vi har å tilby.",
     },
@@ -73,16 +83,16 @@ export default function Navbar() {
                         <li className="row-span-3">
                           <NavigationMenuLink asChild>
                               <img
-                                src="/land-ringsaker.png"
+                                src="/random.png"
                                 alt="ringsaker"
                                 className="h-full w-full rounded-md"
                               />
                           </NavigationMenuLink>
                         </li>
-                        <ListItem href="https://www.ringsaker.kommune.no" title="Om Selskapet">
+                        <ListItem href="https://www.ringsaker.kommune.no" title="Velkommen til Ringsaker!">
                         Utforsk vår virksomhet og oppdag hva vi har å tilby.
                         </ListItem>
-                        <ListItem href="https://www.ringsaker.kommune.no/kontakt-oss.465156.no.html" title="Ta Kontakt">
+                        <ListItem href="https://www.ringsaker.kommune.no/kontakt-oss.465156.no.html" title="Kommunefakta">
                         Har du spørsmål eller ønsker å diskutere et potensielt samarbeid? Ta gjerne kontakt med oss.
                         </ListItem>
                       </ul>
