@@ -56,6 +56,7 @@ import React from "react"
 export default function Navbar() {
     return(
       <div className="sticky inset-x-0 top-0 z-30 bg-background transition-all border-b">
+        <MaxWidthWrapper>
         <nav className="w-full relative flex items-center justify-between mx-auto px-12 py-5">
            
             <Link href="/">
@@ -66,7 +67,7 @@ export default function Navbar() {
             <NavigationMenu>
                 <NavigationMenuList className="hidden md:flex md:space-x-4">
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger>Kom i gang</NavigationMenuTrigger>
+                    <NavigationMenuTrigger>Om Ringskaer</NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                         <li className="row-span-3">
@@ -88,7 +89,7 @@ export default function Navbar() {
                     </NavigationMenuContent>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger>Om Oss</NavigationMenuTrigger>
+                    <NavigationMenuTrigger>Tjenester</NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                         {components.map((component) => (
@@ -102,6 +103,20 @@ export default function Navbar() {
                         ))}
                       </ul>
                     </NavigationMenuContent>
+                  </NavigationMenuItem>
+                  <NavigationMenuItem>
+                    <Link href="https://www.ringsaker.kommune.no/kontakt-oss.465156.no.html" legacyBehavior passHref>
+                      <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                          Organisasjon
+                      </NavigationMenuLink>
+                    </Link>
+                  </NavigationMenuItem>
+                  <NavigationMenuItem>
+                    <Link href="https://www.ringsaker.kommune.no/kontakt-oss.465156.no.html" legacyBehavior passHref>
+                      <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                          Politkk
+                      </NavigationMenuLink>
+                    </Link>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
                     <Link href="https://www.ringsaker.kommune.no/kontakt-oss.465156.no.html" legacyBehavior passHref>
@@ -153,6 +168,7 @@ export default function Navbar() {
               </Link>
  
         </nav>
+        </MaxWidthWrapper>
         </div>
     )
 }

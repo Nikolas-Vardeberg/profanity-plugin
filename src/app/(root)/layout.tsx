@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar"
+import Footer from "@/components/footer"
 
 
 type Props = {
@@ -9,7 +10,10 @@ const RootLayout = ({children}: Props) => {
     return(
         <>
             <Navbar />
-            {children}
+            <main>
+                {children}    
+            </main>
+            <Footer />
         </>
     )
 }
