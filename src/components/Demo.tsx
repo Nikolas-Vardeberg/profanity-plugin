@@ -91,7 +91,7 @@ const Demo = () => {
               </p>
             </div>
           ) : (
-            <p className='text-zinc-700'>Results will be shown here</p>
+            <p className='text-zinc-700'>Resultatet vil bli vist her</p>
           )}
         </div>
 

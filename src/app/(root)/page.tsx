@@ -12,7 +12,7 @@ import Navbar from "@/components/Navbar";
 export default function Home() {
   return (
    <>
-     <div className='bg-blue-50 grainy-light'>
+     <div className='bg-blue-50 grainy-light'>  
       <div className='relative overflow-hidden'>
         <div className='mx-auto max-w-7xl pb-24 pt-10 sm:grid lg:grid-cols-2 sm:pb-32 lg:gap-x-8 lg:px-8 lg:pt-32 lg:pb-52'>
           <div className='px-6 lg:px-0 lg:pt-4'>
@@ -77,16 +77,14 @@ export default function Home() {
           <div className='w-full flex flex-col'>
             <div className='flex justify-center text-center'>
               <h2 className='font-heading text-5xl lg:text-6xl font-bold leading-tight text-balance sm:leading-none tracking-tight'>
-                "Hate speech{' '}
+              "Ord bør bygge broer,{' '}
                 <span className='bg-red-500 text-white font-scary px-3'>
-                  f@#k!ng
+                  ikke
                 </span>{' '}
-                sucks"
+                murer"
               </h2>
             </div>
-            <p className='mx-auto mt-8 text-center text-sm max-w-xl'>
-              - Happy Customer (totally not gaymærn💀)
-            </p>
+            <p className='mx-auto mt-8 text-center text-sm max-w-xl'></p>
 
             {/* <Icons.arrow className='h-60 -mt-4 text-zinc-400 fill-zinc-400 pointer-events-none select-none' /> */}
 
@@ -94,18 +92,15 @@ export default function Home() {
 
             <p className='text-center mx-auto mt-12 text-lg max-w-xl text-balance'>
               <span className='font-semibold'>
-                Moderating profanity is a thankless job.
+                Banning som ung kan føre til et dårlig inntrykk
               </span>{' '}
-              If you run a web app with any kind of user generated content, it's
-              your responsibility to keep things in order. That's a challenge if
-              your users keep dropping F-bombs like confetti at a toddler's
-              birthday party.
+              og påvirke hvordan man blir oppfattet av andre, inkludert lærere og arbeidsgivere. Å uttrykke seg respektfullt er viktig for å bygge sterke relasjoner og lykkes både personlig og profesjonelt.
             </p>
 
            {/* <Icons.arrow className='h-60 -mt-4 text-zinc-400 fill-zinc-400 pointer-events-none select-none' />*/}
 
             <p className='mt-6 sm:mt-12 z-10 text-center mx-auto text-3xl font-semibold'>
-              Profanity on your website...
+              Banning kan føre til...
             </p>
 
             <div className='grid gap-40 sm:grid-cols-2 sm:gap-16 max-w-3xl mx-auto mt-40 text-center'>
@@ -121,12 +116,10 @@ export default function Home() {
                   />
                 </div>
                 <p className='font-semibold text-lg'>
-                  ...scares away new visitors
+                  ...Motstand og opprør
                 </p>
                 <p className='mt-2 text-balance'>
-                  Imagine your ideal customer waddling through a minefield of
-                  four-letter words to find your amazing product. Not exactly a
-                  recipe for conversion is it??
+                  Når unge føler seg begrenset av forbud, kan det føre til motstand og utforskning av alternative, noen ganger risikable, handlinger som et tegn på protest.
                 </p>
               </div>
 
@@ -137,19 +130,17 @@ export default function Home() {
                     alt="swear-emoji"
                     height={96}
                     width={96}
-                    src='/swear-emoji.png'
+                    src='/moai.png'
                     className='relative -z-10 select-none'
                   />
                 </div>
-                <p className='font-semibold text-lg'>...makes you look bad</p>
+                <p className='font-semibold text-lg'>...begrenset utvikling</p>
                 <p className='mt-2 text-balance'>
-                  Your sweet grandma wants to see what her sunshine is doing on
-                  the internet and stumbles upon your website. Do you really
-                  need her to put on a{' '}
+                      Forbud kan hindre unge i å utforske nye ideer og perspektiver, begrense deres kreativitet og læring, og dermed{' '}
                   <span className='font-semibold text-red-600'>
-                    hazmat suit
+                    bremse
                   </span>{' '}
-                  first?
+                  deres personlige og intellektuelle vekst.
                 </p>
               </div>
             </div>
@@ -160,21 +151,21 @@ export default function Home() {
       <section id='video-demo' className='bg-blue-50 grainy-light'>
         <div className='mx-auto max-w-6xl gap-6 pb-24 pt-10 sm:pb-32 lg:gap-x-8 lg:px-8 lg:py-40'>
           <h2 className='mx-auto text-balance text-5xl sm:text-6xl text-center font-bold leading-[4.25rem] tracking-tight max-w-2xl text-slate-900'>
-            There's a <span className='px-2 bg-red-500 text-white'>better</span>{' '}
-            way
+            En <span className='px-2 bg-red-500 text-white'>bedre</span>{' '}
+            måte finnes
           </h2>
 
           <p className='text-center mx-auto mt-12 text-lg max-w-xl text-balance'>
             <span className='font-semibold'>
-              F@#k moderating content manually!
+              Moderer innholdet manuelt?
             </span>{' '}
-            Let ProfanityAPI do the dirty work of keeping your user input clean.
+            La heller RingsakerAPI gjøre det tunge arbeidet med å holde brukerinputen ren.
           </p>
 
           <div
             id='api'
             className='w-full flex flex-col items-center mt-12 px-4'>
-            <p className='font-bold text-xl my-4'>Make an API request</p>
+            <p className='font-bold text-xl my-4'>Lag en API request</p>
             <div className='relative max-w-2xl w-full text-left p-5 bg-[#1e1e1e] rounded-xl shadow'>
               <CodeSection />
             </div>
