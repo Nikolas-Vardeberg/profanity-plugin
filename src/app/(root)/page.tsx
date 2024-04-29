@@ -12,7 +12,6 @@ import Navbar from "@/components/Navbar";
 export default function Home() {
   return (
    <>
-   <Navbar />
      <div className='bg-blue-50 grainy-light'>
       <div className='relative overflow-hidden'>
         <div className='mx-auto max-w-7xl pb-24 pt-10 sm:grid lg:grid-cols-2 sm:pb-32 lg:gap-x-8 lg:px-8 lg:pt-32 lg:pb-52'>

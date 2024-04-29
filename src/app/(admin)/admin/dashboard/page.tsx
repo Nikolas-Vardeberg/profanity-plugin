@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import { getSession } from "@/lib/lib"
 import { redirect } from "next/navigation";
 
@@ -12,7 +11,6 @@ const page = async() => {
 
     return(
         <>
-        <Header />
          <section>
             <div>
                 <pre>{JSON.stringify(session, null, 2)}</pre>

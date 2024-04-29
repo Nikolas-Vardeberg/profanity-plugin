@@ -15,7 +15,7 @@ const Demo = () => {
    
     const handleSubmit = async (event: any) => {
        event.preventDefault();
-       setError(null); // Reset error state
+       setError(null); 
    
        try {
          const res = await fetch('https://profanity-api-demo.nikolaserkjempekull.workers.dev/', {
@@ -32,20 +32,20 @@ const Demo = () => {
          setResponse(data);
        } catch (error) {
          console.error('There was a problem with your fetch operation:', error);
-       }
+       } 
     };
    
     const renderProfanityMessage = (score: number) => {
        if (score > 0.95) {
-         return <span>OH GOD, VERY BIG PROFANITY DETECTED!!</span>;
+         return <span>🚨🚨😱😱 OH GOD, VERY BIG PROFANITY DETECTED!! 🚨🚨😱😱</span>;
        } else if (score > 0.9) {
-         return <span>BIG PROFANITY DETECTED!!</span>;
+         return <span>🚨😱 BIG PROFANITY DETECTED!! 🚨😱</span>;
        } else if (score > 0.88) {
-         return <span>PROFANITY DETECTED!!</span>;
+         return <span>🚨 PROFANITY DETECTED!! 🚨 </span>;
        } else if (score >= 0.85) {
-         return <span>PRETTY SURE THIS IS A PROFANITY</span>;
+         return <span>😱 PRETTY SURE THIS IS A PROFANITY 😱</span>;
        } else if (score < 0.85) {
-         return <span>Crispy clean input, no profanities</span>;
+         return <span>Crispy clean input, no profanities :)) 👍👍</span>;
        }
        return null;
     };
