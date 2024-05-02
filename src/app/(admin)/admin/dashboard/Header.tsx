@@ -1,8 +1,9 @@
 import { getSession, logout } from "@/lib/lib";
-import { redirect } from "next/navigation";
+import { redirect, usePathname } from "next/navigation";
 import { Button } from "../../../../components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import Navigationlink from "./component/navigation-links";
 
 
 
@@ -22,21 +23,7 @@ const Header = async () => {
                     <h1>Stopp Banning admin</h1>
 
                     <div className="space-x-4">
-                        <Link href="/">
-                            <Button variant="primary" className="">
-                                Dashboard
-                            </Button>
-                        </Link>
-                        <Link href="/">
-                            <Button variant="adminOutline">
-                                Pricing
-                            </Button>
-                        </Link>
-                        <Link href="/">
-                            <Button variant="adminOutline">
-                                My Kommune
-                            </Button>
-                        </Link>
+                        <Navigationlink />
                     </div>
 
                     <div>
