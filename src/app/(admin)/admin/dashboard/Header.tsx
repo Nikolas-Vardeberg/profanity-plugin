@@ -3,7 +3,6 @@ import { redirect, usePathname } from "next/navigation";
 import { Button } from "../../../../components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import Navigationlink from "@/app/(admin)/component/navigation-links";
 
 
 
