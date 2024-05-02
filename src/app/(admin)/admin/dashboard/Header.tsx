@@ -18,7 +18,27 @@ const Header = async () => {
         <header className='border bottom-1'>
             <nav className='bg-white border-gray-200 px-4 py-2.5'>
                 <div className='flex flex-wrap justify-between items-center mx-auto max-w-screen-xl'>
-                     <h1>Stopp Banning admin</h1>
+
+                    <h1>Stopp Banning admin</h1>
+
+                    <div className="space-x-4">
+                        <Link href="/">
+                            <Button variant="primary" className="">
+                                Dashboard
+                            </Button>
+                        </Link>
+                        <Link href="/">
+                            <Button variant="adminOutline">
+                                Pricing
+                            </Button>
+                        </Link>
+                        <Link href="/">
+                            <Button variant="adminOutline">
+                                My Kommune
+                            </Button>
+                        </Link>
+                    </div>
+
                     <div>
                         <div className="flex items-center gap-4">
                             <form action={async () => {

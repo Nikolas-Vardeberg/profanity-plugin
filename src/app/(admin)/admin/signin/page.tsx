@@ -48,7 +48,7 @@ export default async function Home() {
                         <Input type="password" id="password" name="password" placeholder="password"/>
                     </div>
 
-                    <Button className="w-full" type="submit">
+                    <Button className="w-full" type="submit" variant="primary">
                         login
                     </Button>
                 </form>

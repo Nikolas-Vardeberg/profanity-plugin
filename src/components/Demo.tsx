@@ -74,6 +74,7 @@ const Demo = () => {
           <Button
             className='h-9 w-full sm:w-fit'
             onClick={handleSubmit}
+            variant="primary"
           >
             Profanity check
           </Button>

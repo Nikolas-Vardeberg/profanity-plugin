@@ -28,7 +28,7 @@ export default function Home() {
                     <span className='absolute -left-4 -right-4 translate-x-[15px] md:translate-x-[3px] md:-top-1.5'>
                       <img
                         src='/swear-emoji.png'
-                        className='h-5 w-5 object-contain md:h-8 md:w-12'
+                        className='h-5 w-5 object-contain md:h-8 md:w-12 '
                       />
                     </span>
                   </span>
@@ -63,6 +63,7 @@ export default function Home() {
               height={160}
               alt="prøv-det"
               aria-hidden='true'
+              draggable={false}
               src='/prøv-det.png'
               className='absolute left-2/3 -top-2 select-none hidden sm:block'
             />
@@ -109,7 +110,8 @@ export default function Home() {
                   <div className='absolute inset-x-0 -bottom-0 h-16 bg-gradient-to-t 0 from-blue-100 pointer-events-none'></div>
                   <Image
                     alt="shocked-emoji"
-                    height={96}
+                    height={96} 
+                    draggable={false}
                     width={96}
                     src='/shocked-emoji.png'
                     className='relative -z-10 select-none'
@@ -130,6 +132,7 @@ export default function Home() {
                     alt="swear-emoji"
                     height={96}
                     width={96}
+                    draggable={false}
                     src='/moai.png'
                     className='relative -z-10 select-none'
                   />
