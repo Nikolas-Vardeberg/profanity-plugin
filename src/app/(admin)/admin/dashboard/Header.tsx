@@ -3,7 +3,7 @@ import { redirect, usePathname } from "next/navigation";
 import { Button } from "../../../../components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import Navigationlink from "./component/navigation-links";
+import Navigationlink from "@/app/(admin)/component/navigation-links";
 
 
 
@@ -14,6 +14,11 @@ const Header = async () => {
         redirect("/admin/signin")
     }
 
+    const adminLinks = [
+        { href: "/admin/dashboard", label: "Dashboard" },
+        { href: "/admin/dashboard/pricing", label: "Pricing" },
+        { href: "/admin/dashboard/kommune", label: "Min Kommune" },
+      ];
   
     return (
         <header className='border bottom-1'>
@@ -23,7 +28,13 @@ const Header = async () => {
                     <h1>Stopp Banning admin</h1>
 
                     <div className="space-x-4">
-                        <Navigationlink />
+                    {adminLinks.map((link, index) => (
+                        <Link key={index} href={link.href}>
+                            <Button variant="adminOutline">
+                                {link.label}
+                            </Button>
+                        </Link>
+                    ))}
                     </div>
 
                     <div>
