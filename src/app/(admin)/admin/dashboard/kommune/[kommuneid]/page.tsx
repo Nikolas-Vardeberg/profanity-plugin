@@ -1,5 +1,6 @@
 import { db } from "@/db";
 import { Ghost } from "lucide-react";
+import { format } from 'date-fns';
 
 interface PageProps {
     params: {
@@ -36,7 +37,13 @@ const page = async({ params }: PageProps) => {
 
     return(
         <div>
-            {getKommuneInfo?.url}
+            <h1>{getKommuneInfo?.url}</h1>
+            <h1>{getKommuneInfo?.id}</h1>
+            <h1>{getKommuneInfo?.name}</h1>
+            <h1>createdAt: {format(new Date(getKommuneInfo?.createdAt), "MMM d yyyy")}</h1>
+
+            USER:
+            <h1>{getKommuneInfo?.userId}</h1>
         </div>
     )
 }

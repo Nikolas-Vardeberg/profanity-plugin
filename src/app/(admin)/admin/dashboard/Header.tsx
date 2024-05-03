@@ -13,10 +13,12 @@ const Header = async () => {
         redirect("/admin/signin")
     }
 
+
+
     const adminLinks = [
         { href: "/admin/dashboard", label: "Dashboard" },
         { href: "/admin/dashboard/pricing", label: "Pricing" },
-        { href: "/admin/dashboard/kommune", label: "Min Kommune" },
+        { href: "/admin/dashboard/kommune/", label: "Min Kommune" },
       ];
   
     return (
